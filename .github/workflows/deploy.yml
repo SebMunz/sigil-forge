@@ -78,6 +78,12 @@ jobs:
           [[ "$CF_PROJECT" =~ ^[a-z0-9][a-z0-9-]{0,62}$ ]]
           [[ "$CF_ACCOUNT" =~ ^[a-f0-9]{32}$ ]]
           test -f deployment/dist/index.html
+      - name: Ensure Pages project exists
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_PAGES_PROJECT: ${{ vars.CLOUDFLARE_PAGES_PROJECT }}
+        run: node scripts/ensure-pages.mjs
       - name: Deploy only the validated artifact
         uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3
         with:

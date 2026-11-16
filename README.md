@@ -79,7 +79,7 @@ Si lo vas a dejar instalado en un proyecto, fija la dependencia a un commit o un
 
 GitHub Actions comprueba el código, ejecuta las pruebas y guarda ese mismo build para publicarlo. En **Actions → Validate and deploy → Run workflow** puedes elegir `preview` o `production`; con `none` solo valida. Los pushes a `main` validan sin publicar, salvo que actives la variable del repositorio `DEPLOY_ENABLED=true`.
 
-Cada entorno de GitHub necesita las variables `CLOUDFLARE_ACCOUNT_ID` y `CLOUDFLARE_PAGES_PROJECT`, junto al secreto `CLOUDFLARE_API_TOKEN` con permiso de edición de Pages. El proyecto de Cloudflare debe existir y usar `main` como rama de producción; los entornos de GitHub también se restringen a esa rama.
+Cada entorno de GitHub necesita las variables `CLOUDFLARE_ACCOUNT_ID` y `CLOUDFLARE_PAGES_PROJECT`, junto al secreto `CLOUDFLARE_API_TOKEN` con permiso de edición de Pages. El flujo crea el proyecto de Pages si todavía no existe, con `main` como rama de producción. Si ya existe, comprueba esa rama y que no tenga otra integración Git. Los entornos de GitHub también se restringen a `main`.
 
 ## Lo que viene
 
