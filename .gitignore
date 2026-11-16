@@ -73,3 +73,6 @@ coverage/
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Temporary static build staging
+/.build-*/

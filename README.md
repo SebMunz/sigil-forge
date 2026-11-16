@@ -73,6 +73,14 @@ Para llevarte el taller completo, importa `@floure/sigil-forge/element` desde el
 
 Si lo vas a dejar instalado en un proyecto, fija la dependencia a un commit o una etiqueta para elegir cuándo actualizarlo.
 
+## Publicar en Cloudflare
+
+`npm run build` deja la página y sus módulos en `dist/`. Esa carpeta es todo lo que necesita Pages.
+
+GitHub Actions comprueba el código, ejecuta las pruebas y guarda ese mismo build para publicarlo. En **Actions → Validate and deploy → Run workflow** puedes elegir `preview` o `production`; con `none` solo valida. Los pushes a `main` validan sin publicar, salvo que actives la variable del repositorio `DEPLOY_ENABLED=true`.
+
+Cada entorno de GitHub necesita las variables `CLOUDFLARE_ACCOUNT_ID` y `CLOUDFLARE_PAGES_PROJECT`, junto al secreto `CLOUDFLARE_API_TOKEN` con permiso de edición de Pages. El proyecto de Cloudflare debe existir y usar `main` como rama de producción; los entornos de GitHub también se restringen a esa rama.
+
 ## Lo que viene
 
 Primero, seguir ampliando los métodos. Después vendrá el editor de trazos para mover nodos y terminar las piezas a mano.

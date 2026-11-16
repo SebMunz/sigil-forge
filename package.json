@@ -19,7 +19,8 @@
   "scripts": {
     "start": "node server.mjs",
     "test": "node --test",
-    "check": "node --check src/engine.js && node --check src/element.js && node --check src/sources.js && node --check src/catalog.js && node --check src/ornament.js && node --check src/legacy-v1.js && node --check src/legacy-v2.js && node --check src/geomancy.js"
+    "check": "node --check src/engine.js && node --check src/element.js && node --check src/sources.js && node --check src/catalog.js && node --check src/ornament.js && node --check src/legacy-v1.js && node --check src/legacy-v2.js && node --check src/geomancy.js",
+    "build": "node scripts/build.mjs"
   },
   "engines": {
     "node": ">=22"
