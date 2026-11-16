@@ -1,0 +1,75 @@
+# Dependencies and local package-manager caches; keep lockfiles
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/install-state.gz
+
+# Rebuildable output and coverage
+/dist/
+/build/
+/out/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Local research, QA captures and exported artwork
+/docs/
+/qa/
+/exports/
+/outputs/
+/artifacts/
+/screenshots/
+*.tgz
+
+# Agent state and tool caches
+/.codex/
+/.agents/
+/.cache/
+/.npm/
+/.pnpm-store/
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+/secrets/
+/credentials/
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+.npmrc
+!.npmrc.example
+
+# Local hosting state
+.wrangler/
+.vercel/
+.netlify/
+
+# Logs, temporary files and recovery copies
+*.log
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*~
+*.swp
+*.swo
+
+# Editor and operating-system state
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.example.json
+.DS_Store
+Thumbs.db
+Desktop.ini

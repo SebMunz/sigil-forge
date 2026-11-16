@@ -1,0 +1,23 @@
+export const sources = [
+  {id:'geomancy',author:'Aleister Crowley',title:'Geomancy',date:'1918',locator:'The International, enero de 1918, pp. 28–29',url:'https://aleistercrowleytimeline.com/Publications/Crowley/Periodicals/1918/International-January/Geomancy.html',status:'consultada',use:'Figuras de uno o dos puntos; madres, hijas, sobrinas, testigos y juez. La siembra desde texto y la disposición vectorial son adaptaciones contemporáneas.'},
+  { id: 'agrippa', author: 'Heinrich Cornelius Agrippa', title: 'De occulta philosophia', date: '1533 / traducción inglesa de 1651', locator: 'Libro II, cap. XXII; tablas de los siete planetas', url: 'https://www.esotericarchives.com/agrippa/agripp2b.htm', status: 'consultada', use: 'Cuadrados planetarios y relación entre números y caracteres. La conversión latina y el enrutado de esta app son adaptaciones explícitas.' },
+  { id: 'spare', author: 'Austin Osman Spare', title: 'The Book of Pleasure (Self-Love)', date: '1913', locator: 'Pasaje sobre combinación de letras simplificadas y lámina de sigilos', url: 'https://www.tarrdaniel.com/documents/Thelemagick/zos/english/AOS_Book_of_Pleasure.html', status: 'consultada', use: 'Inspiración para combinar letras. Nuestro alfabeto geométrico, deduplicación y composición automática son decisiones modernas; no facsímiles de Spare.' },
+  { id: 'crowley', author: 'Aleister Crowley', title: '777', date: '1909; transcripción digital posterior', locator: 'Tabla I, claves 3–5; columna VI (cielos de Assiah)', url: 'https://www.astrumargenteum.org/wp-content/uploads/2016/07/0777-by-Aleister-Crowley.pdf', status: 'consultada', use: 'Binah–Saturno, Chesed–Júpiter, Geburah–Marte como capa de correspondencias herméticas. No es un algoritmo universal de sigilización thelémica.' },
+  { id: 'dee', author: 'John Dee', title: 'Monas Hieroglyphica', date: '1564 / traducción de 1947', locator: 'Teoremas I–X', url: 'https://www.esotericarchives.com/dee/monad.htm', status: 'consultada', use: 'Referencia para composición de signos a partir de elementos geométricos. No implementada como método.' },
+  { id: 'thule', author: 'Nicholas Goodrick-Clarke', title: 'The Occult Roots of Nazism', date: '1985 / edición NYU de 1993', locator: 'Germanenorden y Thule; historiografía del ocultismo nazi', url: 'https://nyupress.org/9780814730607/occult-roots-of-nazism/', status: 'ficha editorial consultada; libro pendiente', use: 'Línea histórica solicitada. No se ha verificado aquí un procedimiento generativo de Thule. El contexto völkisch y antisemita es parte de su historia, no una función artística que deba atribuirse al motor.' },
+  { id: 'trithemius', author: 'Johannes Trithemius', title: 'Steganographia', date: 'impresa en 1606', locator: 'Libros I–III; confrontar ediciones y descifrados', status: 'pendiente', use: 'Investigar signos, ocultación y cifrado; no confundir criptografía con un algoritmo de sigilos.' },
+  { id: 'reuchlin', author: 'Johannes Reuchlin', title: 'De arte cabalistica', date: '1517', locator: 'Seleccionar edición y pasajes', status: 'pendiente', use: 'Cábala cristiana renacentista; distinguir de la cábala judía y de la Qabalah hermética posterior.' },
+  { id: 'sefer-yetzirah', author: 'Tradición textual judía', title: 'Sefer Yetzirah', date: 'datación y recensiones por estudiar', locator: 'Seleccionar edición crítica y traducción', status: 'pendiente', use: 'Letras y combinatoria. No atribuirle nuestro mapeo A–Z ni una práctica única de creación de sigilos.' },
+  { id: 'levi', author: 'Éliphas Lévi', title: 'Dogme et rituel de la haute magie', date: '1854–1856', locator: 'Seleccionar pasajes sobre signos y correspondencias', status: 'pendiente', use: 'Comparar convenciones gráficas sin tratar una síntesis decimonónica como antigüedad universal.' },
+  { id: 'fludd', author: 'Robert Fludd', title: 'Utriusque cosmi historia', date: '1617–1621', locator: 'Seleccionar láminas y edición', status: 'pendiente', use: 'Diagramas cosmológicos y relaciones visuales; evaluar qué parte permite una transformación reproducible.' },
+  { id: 'maier', author: 'Michael Maier', title: 'Atalanta fugiens', date: '1617', locator: 'Seleccionar emblemas', status: 'pendiente', use: 'Emblemas alquímicos y composición; no se presenta como método histórico de sigilización.' }
+];
+export const correspondences = {
+  saturn: { name: 'Binah', number: 3, planet: 'Saturno' },
+  jupiter: { name: 'Chesed', number: 4, planet: 'Júpiter' },
+  mars: { name: 'Geburah', number: 5, planet: 'Marte' },
+  sun:{name:'Tiphareth',number:6,planet:'Sol'},
+  venus:{name:'Netzach',number:7,planet:'Venus'},
+  mercury:{name:'Hod',number:8,planet:'Mercurio'},
+  moon:{name:'Yesod',number:9,planet:'Luna'}
+};

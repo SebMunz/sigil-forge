@@ -1,0 +1,31 @@
+{
+  "name": "@floure/sigil-forge",
+  "version": "0.4.0",
+  "description": "Deterministic sigil engine, provenance and framework-independent workshop",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./src/engine.js",
+    "./element": "./src/element.js",
+    "./sources": "./src/sources.js",
+    "./catalog": "./src/catalog.js",
+    "./geomancy": "./src/geomancy.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "SOURCES.md"
+  ],
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test",
+    "check": "node --check src/engine.js && node --check src/element.js && node --check src/sources.js && node --check src/catalog.js && node --check src/ornament.js && node --check src/legacy-v1.js && node --check src/legacy-v2.js && node --check src/geomancy.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SebMunz/sigil-forge.git"
+  }
+}
